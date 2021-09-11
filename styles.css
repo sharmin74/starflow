@@ -1,0 +1,177 @@
+/*
+------4 FONTS USED------
+1. Fira sans - 400 
+2. Archivo Narrow - 700
+3. Roboto - 400 
+4. Arial - 700
+ */
+
+
+/* font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 40px 60px;
+}
+
+.header__data {
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.header__email {
+    text-decoration: underline;
+}
+
+
+/* HOME  */
+
+.home {
+    background-color: #41C1EA;
+    /*height: 80rem;*/
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px;
+}
+
+.home__flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.home__img {
+    align-self: flex-start;
+}
+
+.home__title {
+    margin: 0;
+    margin: 20px 100px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 56px;
+}
+
+.home__payment p {
+    font-family: 'Roboto', sans-serif;
+    width: 70%;
+    margin: 20px auto 0 auto;
+    font-size: 20px;
+}
+
+.home__paymentButton {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    outline: none;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+}
+
+.home__paymentButton:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.form__container {
+    width: 500px;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+/* MODULES  */
+
+.modules {
+    font-family: 'Roboto', sans-serif;
+    padding: 30px 100px;
+}
+
+.modules__data {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modules__title--underline {
+    text-decoration: underline;
+    margin-top: 80px;
+}
+
+#nm {
+    margin-top: 10px;
+}
+
+.modules__list {
+    font-family: 'Fira Sans', sans-serif;
+    align-self: center;
+    font-size: 18px;
+}
+
+.modules__list li {
+    color: #515254;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    /*.home {*/
+    /*    height: 90rem;*/
+    /*}*/
+    .home__flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .home__title {
+        font-size: 34px;
+        margin: 10px 0px;
+    }
+    .home__image img {
+        height: 250px;
+    }
+    .home__payment p {
+        width: 100%;
+    }
+    .modules {
+        padding: 20px;
+    }
+    .modules__title {
+        font-size: 22px;
+    }
+    .modules__image img {
+        height: 210px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    /*.home {*/
+    /*    height: 98rem;*/
+    /*}*/
+    .form__container {
+        width: 340px;
+        background-color: #FFFFFF;
+        color: #000000;
+        padding: 20px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .modules__image img {
+        height: 180px;
+    }
+}
